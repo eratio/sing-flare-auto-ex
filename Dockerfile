@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 ARG SING_BOX_VERSION=1.12.0
-ARG CLOUDFLARED_VERSION=2026.1.0
+ARG CLOUDFLARED_VERSION=2026.8.3
 
 
 # ==================================================
