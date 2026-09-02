@@ -1,0 +1,34 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+
+  "inbounds": [
+    {
+      "type": "vless",
+      "tag": "vless-ws",
+
+      "listen": "127.0.0.1",
+      "listen_port": 8080,
+
+      "users": [
+        {
+          "uuid": "${UUID}"
+        }
+      ],
+
+      "transport": {
+        "type": "ws",
+        "path": "${WS_PATH}"
+      }
+    }
+  ],
+
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct"
+    }
+  ]
+}
