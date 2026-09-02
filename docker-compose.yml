@@ -1,0 +1,17 @@
+services:
+
+  sing-flare:
+
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: sing-flare
+
+    restart: unless-stopped
+
+    env_file:
+      - .env
+
+    volumes:
+      - ./data:/data
