@@ -74,8 +74,4 @@ HEALTHCHECK \
     CMD ["/app/healthcheck.sh"]
 
 
-ENTRYPOINT [
-    "/sbin/tini",
-    "--",
-    "/app/start.sh"
-]
+ENTRYPOINT ["/sbin/tini", "--", "/app/start.sh"]
