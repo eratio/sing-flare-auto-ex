@@ -24,13 +24,13 @@ FROM cloudflare/cloudflared:${CLOUDFLARED_VERSION} AS cloudflared
 
 FROM alpine:3.21
 
-
 RUN apk add --no-cache \
     ca-certificates \
     gettext \
     tini \
     procps \
-    jq
+    jq \
+    iproute2
 
 
 COPY --from=sing-box \
