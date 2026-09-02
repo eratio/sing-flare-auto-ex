@@ -1,0 +1,15 @@
+.git
+
+.github
+
+.env
+
+data
+
+config.json
+
+*.log
+
+README.md
+
+LICENSE
